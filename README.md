@@ -1,73 +1,120 @@
-# Calculator Mini-Project
+# 📱 iPhone Calculator — DOM-Based Mini Project
 
-This repository contains a web-based calculator project built using HTML, CSS, and JavaScript, focusing on DOM manipulation, keyboard events, and responsive design. The calculator handles basic arithmetic operations and includes features specified in the task requirements.
+[![Deploy](https://github.com/TheComputationalCore/Iphone-Calculator/actions/workflows/deploy.yml/badge.svg)](https://github.com/TheComputationalCore/Iphone-Calculator/actions/workflows/deploy.yml)
+[![HTML Lint](https://github.com/TheComputationalCore/Iphone-Calculator/actions/workflows/html-lint.yml/badge.svg)](https://github.com/TheComputationalCore/Iphone-Calculator/actions/workflows/html-lint.yml)
+[![CSS Lint](https://github.com/TheComputationalCore/Iphone-Calculator/actions/workflows/css-lint.yml/badge.svg)](https://github.com/TheComputationalCore/Iphone-Calculator/actions/workflows/css-lint.yml)
+[![Prettier](https://github.com/TheComputationalCore/Iphone-Calculator/actions/workflows/prettier.yml/badge.svg)](https://github.com/TheComputationalCore/Iphone-Calculator/actions/workflows/prettier.yml)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## Project Structure
+A modern, responsive **iPhone-style Calculator** built entirely using **DOM Manipulation**, **HTML5**, **CSS3**, and **Vanilla JavaScript**.  
+This project also includes professional CI/CD workflows, code linting, auto-formatting, and GitHub Pages deployment.
 
-- **index.html**: The main HTML file that includes the calculator structure (created via DOM) and links to the JavaScript and CSS files.
-- **script.js**: Contains the JavaScript code for DOM manipulation, keyboard event handling, calculator operations, and optional memory functionalities.
-- **style.css**: The CSS file that styles the calculator, ensuring responsiveness across all media screens.
+---
 
-## Calculator Features
+## 🚀 Live Demo  
+👉 **https://thecomputationalcore.github.io/Iphone-Calculator/**
 
-The calculator includes the following features:
-- **DOM-Based Structure**: All HTML elements are created dynamically using the Document Object Model (DOM).
-- **Keyboard Events**:
-  - Accepts input for numbers via keyboard events.
-  - Shows an alert ("Only numbers are allowed") when non-number keys are pressed.
-- **Arithmetic Operations**:
-  - Supports addition, subtraction, division, multiplication, and modulus.
-  - Handles infix expressions (e.g., `5 + 3 * 2`).
-- **Responsive Design**:
-  - Styled using CSS and Bootstrap for responsiveness across different screen sizes.
-- **Optional Memory Features** (if implemented):
-  - `M+`, `M-`, and `MC` functionalities using `localStorage` for memory operations.
-- **Test Suite**:
-  - Includes a test suite from `https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js` to verify functionality.
+---
 
-## How to View
+## 📂 Project Structure  
+```
+Iphone-Calculator/
+├── index.html
+├── style.css
+├── script.js
+├── screenshots/   (optional if added)
+├── .github/workflows/
+│   ├── deploy.yml
+│   ├── html-lint.yml
+│   ├── css-lint.yml
+│   ├── prettier.yml
+└── README.md
+```
 
-1. **Clone the Repository**:
+---
+
+## ✨ Features
+
+### 🧩 Core Functionality  
+- Fully functional calculator  
+- Supports AC, DEL, %, +, -, *, /  
+- Decimal input  
+- Double-zero (00) support  
+- Live result updates  
+- Error handling for invalid expressions  
+
+### ⌨ Keyboard Support  
+- Numbers (0–9)  
+- Operators (+ - * / %)  
+- **Enter → equals**  
+- **Backspace → DEL**  
+- **Delete → AC**  
+
+### 🎨 UI & Styling  
+- iPhone-inspired UI  
+- Rounded buttons  
+- Dark display panel  
+- Responsive layout  
+- Smooth spacing & grid button layout  
+
+### 🧠 JavaScript (DOM Manipulation)  
+- Entire UI dynamically created  
+- Clean button mapping array  
+- Safe evaluation using `try/catch`  
+- Prevents invalid operator sequences  
+
+---
+
+## 🛠 Tech Stack
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-181717?style=for-the-badge&logo=github&logoColor=white)
+
+---
+
+## 📸 Screenshots  
+(Add your screenshots into `screenshots/` folder to display them.)
+
+```
+![Calculator Screenshot](./screenshots/1.png)
+```
+
+---
+
+## ▶️ Running Locally
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/thesoulseizure/Mini-Project.git
+   git clone https://github.com/TheComputationalCore/Iphone-Calculator.git
    ```
-2. **Navigate to the Project Directory**:
+
+2. Open the project folder:
    ```bash
-   cd Mini-Project
+   cd Iphone-Calculator
    ```
-3. **Open the HTML File**:
-   - Open `index.html` in a web browser to view the calculator.
-   - Ensure `script.js` and `style.css` are in the same directory for functionality and styling.
 
-## Deployment
+3. Open in browser:
+   ```
+   index.html
+   ```
 
-- **Netlify Deployment**: The project is deployed on Netlify (link to be added after deployment).
-- **GitHub Pages**: The project is also deployed via GitHub Pages (available under the "Deployments" section).
+---
 
-## How to Test
+## 🚀 Deployment  
+This project deploys automatically using **GitHub Pages**.  
+Workflow: `.github/workflows/deploy.yml`
 
-1. **Add the Test Suite**:
-   - Ensure the following script tag is included in the `<body>` of `index.html`:
-     ```html
-     <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
-     ```
-2. **Run the Tests**:
-   - Open `index.html` in a browser.
-   - Select the project task "DOM Calculator" from the dropdown (if available).
-   - Click the "Run Test" button to execute the test cases.
-   - Review the test case results and fix any issues based on the feedback.
+Live URL updates automatically on every push to `main`.
 
-## Requirements
+---
 
-- A web browser to view the calculator.
-- Internet connection to load the test suite and Bootstrap (if used).
-- No additional setup is required since this is a static web project.
+## 📝 License  
+This project is licensed under the **MIT License**.
 
-## Resources Used
+---
 
-- **HTML, CSS, and Bootstrap**: For structure and responsive styling.
-- **JavaScript and DOM**: For dynamic element creation and event handling.
-- **References**:
-  - [MDN Web Docs - DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
-  - [MDN Web Docs - CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-  - [W3C CSS Overview](https://www.w3.org/Style/CSS/Overview.en.html)
+## 🌟 Author  
+**TheComputationalCore**  
+Building elegant & professional frontend mini‑projects.
