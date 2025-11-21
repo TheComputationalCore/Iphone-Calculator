@@ -1,0 +1,25 @@
+name: Prettier Formatter
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Prettier
+        run: npm install -g prettier
+
+      - name: Run Prettier
+        run: prettier --write "**/*.{html,css,js}"
+
+      - name: Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Prettier auto-format"
+          branch: ${{ github.ref }}
