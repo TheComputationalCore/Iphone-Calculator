@@ -15,11 +15,26 @@ container.append(display);
 
 // Buttons layout map
 const buttonLayout = [
-  "AC", "DEL", "%", "/",
-  "7", "8", "9", "*",
-  "4", "5", "6", "-",
-  "1", "2", "3", "+",
-  "0", "00", ".", "="
+  "AC",
+  "DEL",
+  "%",
+  "/",
+  "7",
+  "8",
+  "9",
+  "*",
+  "4",
+  "5",
+  "6",
+  "-",
+  "1",
+  "2",
+  "3",
+  "+",
+  "0",
+  "00",
+  ".",
+  "=",
 ];
 
 // Create button grid container
@@ -28,7 +43,7 @@ buttonGrid.setAttribute("class", "buttons");
 container.append(buttonGrid);
 
 // Dynamically create all buttons
-buttonLayout.forEach(value => {
+buttonLayout.forEach((value) => {
   const btn = document.createElement("button");
 
   // Operator styling
@@ -76,8 +91,8 @@ function calculate(value) {
 // ------------------------------------------------------------
 //  Click Events
 // ------------------------------------------------------------
-document.querySelectorAll("button").forEach(button => {
-  button.addEventListener("click", e => {
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("click", (e) => {
     calculate(e.target.dataset.value);
   });
 });
@@ -85,7 +100,7 @@ document.querySelectorAll("button").forEach(button => {
 // ------------------------------------------------------------
 //  Keyboard Support (Numbers + Operators)
 // ------------------------------------------------------------
-document.addEventListener("keydown", event => {
+document.addEventListener("keydown", (event) => {
   const key = event.key;
 
   // Allowed keys

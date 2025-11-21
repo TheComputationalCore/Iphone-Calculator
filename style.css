@@ -1,98 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
 
+#title {
+  top: 10px;
+}
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b0d0e5;
+  background-image: url("./background-1311251_1280.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica Neue", sans-serif;
-    box-sizing: border-box;
-  }
-  
-  
-  #title{
-    top: 10px;
-    }
+.container {
+  height: 70%;
+  width: 275px;
+  padding: 25px;
+  background: #000000;
+  border-radius: 40px;
+}
 
+.display {
+  height: 20%;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  text-align: right;
+  font-size: 20px;
+}
 
-
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #b0d0e5;
-    background-image: url("./background-1311251_1280.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-  
-  }
-
-  
-  .container{
-    height: 70%;
-    width: 275px;
-    padding: 25px;
-    background: #000000;
-    border-radius: 40px;
-  
-  }
-
-  
-  .display{
-    height:20%;
-    width: 100%;
-    margin-bottom: 10px;
-    border: none;
-    outline: none;
-    text-align: right;
-    font-size: 20px;
-  
-  
-  }
-  
-  .buttons{
+.buttons {
   display: grid;
   gap: 5px;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 15px;
   grid-column-gap: 10px;
-  
-  
-  
-  }
+}
 
+button {
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  font-size: 1.25rem;
+  background-color: #333333;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
 
-  button{
-  
-    padding:  10px;
-    border-radius: 100px;
-    border: none;
-    font-size: 1.25rem;
-    background-color: #333333;
-    color: #fff;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-  
-  }
+.operator {
+  background: #ff7801;
+}
 
-  .operator{
-    background: #ff7801;
-   
-  }
-
-  #result{
-      height: 30%;
-      background-color: rgb(9, 9, 9);
-      color :#fff
-  }
-
-
-
-
-
-
-
-
+#result {
+  height: 30%;
+  background-color: rgb(9, 9, 9);
+  color: #fff;
+}
