@@ -75,7 +75,7 @@ Iphone-Calculator/
 ---
 
 ## 📸 Screenshots  
-(Add your screenshots into `screenshots/` folder to display them.)
+
 
 ```
 ![Calculator Screenshot](./screenshots/1.png)
