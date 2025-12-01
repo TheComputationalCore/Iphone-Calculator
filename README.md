@@ -77,9 +77,9 @@ Iphone-Calculator/
 ## 📸 Screenshots  
 
 
-```
-![Calculator Screenshot](./screenshots/1.png)
-```
+
+![Calculator Screenshot](./screenshots/1.png) 
+
 
 ---
 
